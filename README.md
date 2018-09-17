@@ -6,11 +6,13 @@ The basics were made using [`create-react-native-app`](https://github.com/react-
 
 The entry point for the app is `./App.js`, and modules are located in `src/`.
 
+If you wish to contribute to the project, please see [CONTRIBUTING.md](https://github.com/FSUInnovationHub/Hub-App/blob/master/CONTRIBUTING.md).
+
 ## Setting up development environment
 
 **1.)** Ensure that you have Node.JS installed. If you don't, or the version you have is out of date, you can download the latest installer [here](https://nodejs.org/en/download/). We recommend the LTS.
 
-**2.)** We don't have a workflow established just yet, so for the time being just [fork](https://help.github.com/articles/fork-a-repo/#fork-an-example-repository) the repo and clone your fork to your local rig.
+**2.)** [Fork](https://help.github.com/articles/fork-a-repo/#fork-an-example-repository) the repo and clone your fork to your local rig. (For more info on contributing and branches, see  [CONTRIBUTING.md](https://github.com/FSUInnovationHub/Hub-App/blob/master/CONTRIBUTING.md).)
 
 ```
 $ git clone https://github.com/yourUsername/Hub-App.git && cd /Hub-App
