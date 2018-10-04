@@ -1,18 +1,31 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView,
+         ScrollView, Dimensions, Image, Platform,
+         StatusBar } from 'react-native';
+import { createDrawerNavigator, DrawerItems } from 'react-navigation'
+
+import Home from './home/Home.js'
+import Rooms from './rooms/Rooms.js'
+
+const {width} = Dimensions.get('window')
 
 export default class Main extends React.Component {
   render() {
     return (
-      <View style={styles.container}>
-        <Text>This is the "Main" element!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
+      <AppNav/>
     );
   }
 }
 
+const AppNav = createDrawerNavigator({
+    Home: Home,
+    Rooms: Rooms
+  }, {
+    drawerWidth: width/2,
+    contentOptions: {
+      activeTintColor: 'orange'
+    }
+})
 const styles = StyleSheet.create({
   container: {
     flex: 1,
